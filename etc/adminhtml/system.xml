@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+
+    <system>
+        <section id="contact">
+            <group id="email">
+                <field id="recipient_email">
+                    <validate>required-entry</validate> <!-- Override core "validate-email" filter -->
+                    <backend_model>SwtDigital\MultipleContactFormRecipients\Model\Config\Backend\EmailCsvValidator</backend_model>
+                    <comment>Comma separated list of email addresses. E.g. test1@example.com,test2@example.com</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

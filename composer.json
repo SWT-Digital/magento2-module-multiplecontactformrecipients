@@ -1,0 +1,24 @@
+{
+    "name": "swtdigital/magento2-module-multiplecontactformrecipients",
+    "description": "Allows Magento contact form submissions to be sent to multiple email addresses.",
+    "require": {
+        "php": ">=7.3",
+        "magento/framework": ">=103"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SwtDigital\\MultipleContactFormRecipients\\": ""
+        }
+    },
+    "depends": {
+        "magento/module-contact": "^100.4.0"
+    }
+}
